@@ -5,7 +5,7 @@ import { useTheme } from "next-themes";
 import { ProfileSection } from "@/src/components/ui/profile-section";
 import { ThemeSwitcher } from "@/src/components/ui/theme-switcher";
 import { LocaleSwitcher } from "@/src/components/ui/locale-switcher";
-import { MidnightCyberBackground } from "@/src/components/ui/aurora-background";
+import { MidnightCyberBackground } from "@/src/components/ui/MidnightCyberBackground";
 import { Text } from "@/src/components/ui/text";
 import { usePathname } from "@/src/i18n/routing";
 
