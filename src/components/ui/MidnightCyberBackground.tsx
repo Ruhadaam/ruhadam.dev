@@ -101,7 +101,7 @@ export const MidnightCyberBackground = ({
       </svg>
 
       {/* Layer 1: Liquid Blobs Container (Prismatic Atmosphere) */}
-      <div className="absolute inset-0 pointer-events-none filter-[url(#liquid-essence)] opacity-40 dark:opacity-80 transition-opacity duration-1000">
+      <div className="absolute inset-0 pointer-events-none filter-[blur(60px)] md:filter-[url(#liquid-essence)] opacity-40 dark:opacity-80 transition-opacity duration-1000">
         {" "}
         {/* Floating Blob 1 - Indigo */}
         <motion.div
@@ -195,7 +195,7 @@ export const MidnightCyberBackground = ({
 
       {/* Layer 4: High-End Film Grain */}
       <div
-        className="absolute inset-0 pointer-events-none opacity-[0.03] dark:opacity-[0.05] mix-blend-multiply dark:mix-blend-screen transition-opacity duration-1000 z-40"
+        className="absolute inset-0 pointer-events-none opacity-[0.03] dark:opacity-[0.05] mix-blend-multiply dark:mix-blend-screen transition-opacity duration-1000 z-40 hidden md:block"
         style={{
           backgroundImage:
             "url('https://grainy-gradients.vercel.app/noise.svg')",
@@ -210,7 +210,7 @@ export const MidnightCyberBackground = ({
       </div>
 
       {/* Layer 6: Global Mouse Torch Overlay */}
-      <div className="absolute inset-0 pointer-events-none z-[100] overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none z-[100] overflow-hidden hidden md:block">
         <motion.div
           style={{
             left: smoothX,

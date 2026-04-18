@@ -133,5 +133,10 @@
       "experience": "Deneyim",
       "education": "Eğitim"
     }
+  },
+  "Footer": {
+    "quote": "Önce biraz ağladılar, ama alıştılar şimdi. Aşağılık insanoğlu her şeye alışır!",
+    "author": "Fyodor Dostoyevski",
+    "book": "Suç ve Ceza"
   }
 }

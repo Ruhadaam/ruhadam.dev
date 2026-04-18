@@ -8,12 +8,14 @@ import { LocaleSwitcher } from "@/src/components/ui/locale-switcher";
 import { MidnightCyberBackground } from "@/src/components/ui/MidnightCyberBackground";
 import { Text } from "@/src/components/ui/text";
 import { usePathname } from "@/src/i18n/routing";
+import { useTranslations } from "next-intl";
 
 export default function MainLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const t = useTranslations("Footer");
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const scrollContainerRef = useRef<HTMLElement>(null);
@@ -60,13 +62,29 @@ export default function MainLayout({
       </div>
 
       {/* Footer Controls */}
-      <footer className="fixed bottom-8 left-8 right-8 z-50 flex items-center justify-between pointer-events-none">
-        <div className="pointer-events-auto">
+      <footer className="fixed bottom-4 md:bottom-8 left-4 md:left-8 right-4 md:right-8 z-50 flex flex-col md:flex-row items-center justify-between gap-5 md:gap-0 pointer-events-none">
+        {/* Left: Copyright */}
+        <div className="pointer-events-auto w-full md:w-[250px] flex justify-center md:justify-start order-3 md:order-1">
           <Text className="text-[0.65rem] font-medium text-zinc-400 dark:text-zinc-500 tracking-wider uppercase">
             © 2026 ruhadam.dev
           </Text>
         </div>
-        <div className="flex items-center gap-3 pointer-events-auto">
+
+        {/* Center: Quote */}
+        <div className="pointer-events-auto flex-1 flex items-center justify-center text-center order-1 md:order-2 px-2">
+          <p className="text-[0.55rem] md:text-[0.6rem] text-zinc-500 dark:text-zinc-400 font-medium leading-tight max-w-3xl">
+            <span className="italic">"{t("quote")}"</span>
+            <span className="mx-1.5 md:mx-2 text-zinc-300 dark:text-zinc-700 font-light">
+              |
+            </span>
+            <span className="opacity-80 font-semibold tracking-wider uppercase text-[0.45rem] md:text-[0.5rem]">
+              {t("author")}, {t("book")}
+            </span>
+          </p>
+        </div>
+
+        {/* Right: Controls */}
+        <div className="flex items-center gap-3 pointer-events-auto w-full md:w-[250px] justify-center md:justify-end order-2 md:order-3">
           <ThemeSwitcher />
           <LocaleSwitcher />
         </div>

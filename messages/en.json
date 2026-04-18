@@ -133,5 +133,10 @@
       "experience": "Experience",
       "education": "Education"
     }
+  },
+  "Footer": {
+    "quote": "They wept a little, but are used to it now. Man, the scoundrel, gets used to everything!",
+    "author": "Fyodor Dostoevsky",
+    "book": "Crime and Punishment"
   }
 }
