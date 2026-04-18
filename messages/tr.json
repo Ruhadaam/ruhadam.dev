@@ -1,0 +1,137 @@
+{
+  "Index": {
+    "brandName": "Alperen Gökçek",
+    "slogan": "Dijital Ruh & Zanaat",
+    "barLogo": "Alperen",
+    "barExt": ".dev",
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "role": "React Native Developer - React Developer",
+    "bio": "Web ve mobil dünyasında dijital ruhun peşinde koşan, zanaatkar ruhlu bir yazılım geliştirici.",
+    "heroTitle1": "Tasarım.",
+    "heroTitle2": "Kod.",
+    "heroTitleSoul": "Her pikselde ruh.",
+    "heroCta": "Yolculuğumu Keşfet",
+    "heroSecondaryCta": "Projeleri Gör",
+    "resumeTitle": "Profesyonel Deneyim",
+    "resumeSubtitle": "Kariyer ve Eğitim Zaman Çizelgem",
+    "techStackTitle": "Teknoloji Yığını",
+    "linkedinProfileCard": {
+      "title": "Alperen Gökçek",
+      "subtitle": "Yazılım & Tasarım",
+      "cta": "LinkedIn Profiline Git",
+      "tagline": "İş birlikleri ve sorularınız için iletişime geçebilirsiniz."
+    },
+    "twitterProfile": {
+      "title": "Alperen Gökçek",
+      "handle": "mrruhadam",
+      "bio": "Dijital evrenin derinliklerinden; tasarım, kod ve yaratıcı süreçler üzerine paylaşımlar.",
+      "following": "142",
+      "followers": "4.2K",
+      "tweets": [
+        {
+          "text": "Minimalizm sadece bir tasarım değil, bir yaşam biçimidir. 🎨",
+          "likes": "1.2K",
+          "retweets": "450",
+          "replies": "12",
+          "date": "2 Sa"
+        },
+        {
+          "text": "Modern web teknolojileri ile sınırları zorlamaya devam! 🚀 #NextJS #React",
+          "likes": "3.5K",
+          "retweets": "1.2K",
+          "replies": "84",
+          "date": "1 G"
+        },
+        {
+          "text": "Gece yarıları, en saf kodların yazıldığı saatlerdir.",
+          "likes": "420",
+          "retweets": "120",
+          "replies": "5",
+          "date": "3 G"
+        }
+      ]
+    },
+    "instagramProfile": {
+      "title": "alperen.jsx",
+      "bio": "Visual Stories & Digital Craft",
+      "posts": "42",
+      "followers": "1.8K",
+      "following": "256",
+      "cta": "Instagram'da Takip Et"
+    },
+    "about": {
+      "title": "Hakkımda",
+      "text": "Ankara'da yaşıyorum. Çocukluk yıllarımdan itibaren teknolojiye duyduğum ilgi beni her geçen gün daha da büyüttü. 4-5 yaşlarımda klavye ve mouse tutmaya başladım, teknolojiye olan sevgim ve merakım her zaman arttı. Birçok insan aşkını ya da işini seçerken, ben işime aşık olmayı tercih ettim. Şu an hayatıma web ve mobil geliştirme üzerine çalışarak devam ediyorum.",
+      "backgroundLabel": "HİKAYE"
+    },
+    "passion": {
+      "title": "Teknoloji ve Yapay Zeka Tutkusu",
+      "text": "Yapay zeka ve diğer gelişen teknolojileri yakından takip etmeye özen gösteriyorum. İlgi alanlarım sadece web ve mobil geliştirme ile sınırlı değil; aynı zamanda bot geliştirme ve Linux sistemleri üzerinde de çalışmalar yapıyorum. Evimde kullandığım bir Raspberry Pi ile birkaç botum var.",
+      "backgroundLabel": "TUTKU",
+      "codeTag": "dijital.ruh.jsx"
+    }
+  },
+  "Resume": {
+    "exp1": {
+      "title": "Ön Uç Geliştirici",
+      "org": "JuniusTech",
+      "loc": "Uzaktan",
+      "date": "Şub 2026 — Günümüz",
+      "desc": [
+        "React.js ve Next.js kullanarak modern kullanıcı arayüzleri geliştirme.",
+        "Performans optimizasyonu ve ölçeklenebilir mimarilere odaklanma.",
+        "Yüksek kaliteli web çözümleri sunmak için ekiplerle çalışma."
+      ]
+    },
+    "exp2": {
+      "title": "Mobil Uygulama Geliştirici",
+      "org": "JuniusTech",
+      "loc": "Yarı Zamanlı",
+      "date": "Ara 2024 — Günümüz",
+      "desc": [
+        "React Native ile cross-platform mobil uygulamalar geliştirme.",
+        "Mobil uygulama yaşam döngüsü ve mağaza süreçlerinin yönetimi.",
+        "Gerçek zamanlı veri senkronizasyonu ve API entegrasyonları."
+      ]
+    },
+    "exp3": {
+      "title": "Grafik Tasarımcı",
+      "org": "Kıvırcık Paspas",
+      "loc": "Tam Zamanlı",
+      "date": "Eyl 2024 — Nis 2025",
+      "desc": [
+        "Marka kimliği ve dijital varlıkların tasarımı.",
+        "Sosyal medya içerikleri ve reklam materyalleri üretimi.",
+        "Konsept aşamasından üretime tasarım süreçlerinin yönetimi."
+      ]
+    },
+    "exp4": {
+      "title": "Web Tasarımcı",
+      "org": "Seta Meda",
+      "loc": "Yarı Zamanlı",
+      "date": "Eyl 2022 — Şub 2023",
+      "desc": [
+        "Kullanıcı odaklı web tasarımları ve interaktif prototipler.",
+        "Farklı cihazlar için duyarlı tasarım prensiplerinin uygulanması.",
+        "UI bileşen kütüphaneleri ve tasarım sistemleri geliştirme."
+      ]
+    },
+    "edu1": {
+      "title": "Bilgisayar Programcılığı",
+      "org": "Ankara Üniversitesi",
+      "loc": "Ankara, TR",
+      "date": "2021 — 2023",
+      "desc": [
+        "Bilgi sistemleri ve bilgisayar bilimleri temelleri.",
+        "Mobil ve web uygulama geliştirme prensipleri."
+      ]
+    },
+    "labels": {
+      "experience": "Deneyim",
+      "education": "Eğitim"
+    }
+  }
+}

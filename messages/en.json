@@ -1,0 +1,137 @@
+{
+  "Index": {
+    "brandName": "Alperen Gökçek",
+    "slogan": "Digital Soul & Craft",
+    "barLogo": "Alperen",
+    "barExt": ".dev",
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "role": "React Native Developer - React Developer",
+    "bio": "A craft-minded software developer chasing the digital soul in the web and mobile world.",
+    "heroTitle1": "Design.",
+    "heroTitle2": "Code.",
+    "heroTitleSoul": "Soul in every pixel.",
+    "heroCta": "Explore My Journey",
+    "heroSecondaryCta": "View Projects",
+    "resumeTitle": "Professional Experience",
+    "resumeSubtitle": "My Career & Education Timeline",
+    "techStackTitle": "Tech Stack",
+    "linkedinProfileCard": {
+      "title": "Alperen Gökçek",
+      "subtitle": "Software & Design",
+      "cta": "Go to LinkedIn Profile",
+      "tagline": "You can contact me for collaborations and questions."
+    },
+    "twitterProfile": {
+      "title": "Alperen Gökçek",
+      "handle": "mrruhadam",
+      "bio": "From the depths of the digital universe; sharing on design, code, and creative processes.",
+      "following": "142",
+      "followers": "4.2K",
+      "tweets": [
+        {
+          "text": "Minimalism is not just a design, it's a way of life. 🎨",
+          "likes": "1.2K",
+          "retweets": "450",
+          "replies": "12",
+          "date": "2h"
+        },
+        {
+          "text": "Pushing the boundaries with modern web technologies! 🚀 #NextJS #React",
+          "likes": "3.5K",
+          "retweets": "1.2K",
+          "replies": "84",
+          "date": "1d"
+        },
+        {
+          "text": "Midnights are the hours when the purest code is written.",
+          "likes": "420",
+          "retweets": "120",
+          "replies": "5",
+          "date": "3d"
+        }
+      ]
+    },
+    "instagramProfile": {
+      "title": "alperen.jsx",
+      "bio": "Visual Stories & Digital Craft",
+      "posts": "42",
+      "followers": "1.8K",
+      "following": "256",
+      "cta": "Follow on Instagram"
+    },
+    "about": {
+      "title": "About Me",
+      "text": "I live in Ankara. Since childhood, my fascination with technology has fueled my growth every single day. I started using a keyboard and mouse at just 4 or 5 years old, and my passion and curiosity have only deepened over time. While most people choose between following their heart or their career, I chose to fall in love with my work. Today, I continue my journey by developing high-end web and mobile applications.",
+      "backgroundLabel": "STORY"
+    },
+    "passion": {
+      "title": "Passion for Tech & AI",
+      "text": "I stay deeply connected to artificial intelligence and emerging technologies. My interests extend beyond web and mobile development; I also dive into bot development and Linux systems. I even run several custom-built bots on a Raspberry Pi at home.",
+      "backgroundLabel": "PASSION",
+      "codeTag": "digital.soul.jsx"
+    }
+  },
+  "Resume": {
+    "exp1": {
+      "title": "Front-end Developer",
+      "org": "JuniusTech",
+      "loc": "Remote",
+      "date": "Feb 2026 — Present",
+      "desc": [
+        "Developing modern user interfaces using React.js and Next.js.",
+        "Focusing on performance optimization and scalable architectures.",
+        "Collaborating with cross-functional teams to deliver high-quality web solutions."
+      ]
+    },
+    "exp2": {
+      "title": "Mobile App Developer",
+      "org": "JuniusTech",
+      "loc": "Part-time",
+      "date": "Dec 2024 — Present",
+      "desc": [
+        "Developing cross-platform mobile applications with React Native.",
+        "Managing mobile app lifecycles and deployment to store environments.",
+        "Implementing real-time data synchronization and API integrations."
+      ]
+    },
+    "exp3": {
+      "title": "Graphic Designer",
+      "org": "Kıvırcık Paspas",
+      "loc": "Full-time",
+      "date": "Sep 2024 — Apr 2025",
+      "desc": [
+        "Designing brand identities and digital marketing assets.",
+        "Producing social media content and advertising materials.",
+        "Managing design workflows from concept to final production."
+      ]
+    },
+    "exp4": {
+      "title": "Web Designer",
+      "org": "Seta Meda",
+      "loc": "Part-time",
+      "date": "Sep 2022 — Feb 2023",
+      "desc": [
+        "Creating user-centric web designs and interactive prototypes.",
+        "Applying responsive design principles for various devices.",
+        "Developing UI component libraries and design systems."
+      ]
+    },
+    "edu1": {
+      "title": "Computer Programming",
+      "org": "Ankara University",
+      "loc": "Ankara, TR",
+      "date": "2021 — 2023",
+      "desc": [
+        "Foundations of Information Systems and Computer Science.",
+        "Mobile and Web Application Development principles."
+      ]
+    },
+    "labels": {
+      "experience": "Experience",
+      "education": "Education"
+    }
+  }
+}
