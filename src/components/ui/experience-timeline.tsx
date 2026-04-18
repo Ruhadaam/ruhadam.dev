@@ -51,7 +51,7 @@ export const ExperienceTimeline = ({
         <motion.div
           initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="flex flex-col items-start gap-2"
         >
@@ -71,7 +71,7 @@ export const ExperienceTimeline = ({
             key={item.id}
             initial={{ x: -20, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ once: false, margin: "-50px" }}
+            viewport={{ once: true, margin: "-50px" }}
             transition={{ delay: idx * 0.05, duration: 0.5 }}
             className="relative"
           >

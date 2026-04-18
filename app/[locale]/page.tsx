@@ -69,15 +69,9 @@ export default function Home() {
       </div>
 
       {/* Experience Timeline Integration */}
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ delay: 0.2, duration: 1 }}
-        className="w-full max-w-2xl"
-      >
+      <div className="w-full max-w-2xl">
         <ExperienceTimeline showTitle={true} />
-      </motion.div>
+      </div>
     </div>
   );
 }

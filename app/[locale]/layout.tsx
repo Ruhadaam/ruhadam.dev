@@ -28,8 +28,10 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className={`${inter.variable} antialiased font-sans tracking-tight`}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+      <body
+        className={`${inter.variable} antialiased font-sans tracking-tight`}
+      >
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <NextIntlClientProvider locale={locale} messages={messages}>
             <MainLayout>{children}</MainLayout>
           </NextIntlClientProvider>
