@@ -112,8 +112,9 @@ export const MidnightCyberBackground = ({
           }}
           transition={{ duration: 35, repeat: Infinity, ease: "linear" }}
           style={{ background: "var(--nebula-2)" }}
-          className="absolute top-1/4 left-1/4 w-[600px] h-[600px] rounded-full opacity-40 dark:opacity-40"
+          className="absolute top-1/4 left-1/4 w-[300px] h-[300px] md:w-[600px] md:h-[600px] rounded-full opacity-40 dark:opacity-40"
         />
+
         {/* Floating Blob 2 - Rose (New) */}
         <motion.div
           animate={{
@@ -123,8 +124,9 @@ export const MidnightCyberBackground = ({
           }}
           transition={{ duration: 28, repeat: Infinity, ease: "linear" }}
           style={{ background: "var(--nebula-vibrant-1)" }}
-          className="absolute top-1/3 right-1/4 w-[500px] h-[500px] rounded-full opacity-30 dark:opacity-30"
+          className="absolute top-1/3 right-1/4 w-[250px] h-[250px] md:w-[500px] md:h-[500px] rounded-full opacity-30 dark:opacity-30"
         />
+
         {/* Floating Blob 3 - Emerald (New) */}
         <motion.div
           animate={{
@@ -134,8 +136,9 @@ export const MidnightCyberBackground = ({
           }}
           transition={{ duration: 32, repeat: Infinity, ease: "linear" }}
           style={{ background: "var(--nebula-vibrant-2)" }}
-          className="absolute bottom-1/4 left-1/3 w-[450px] h-[450px] rounded-full opacity-35 dark:opacity-25"
+          className="absolute bottom-1/4 left-1/3 w-[220px] h-[220px] md:w-[450px] md:h-[450px] rounded-full opacity-35 dark:opacity-25"
         />
+
         {/* Floating Blob 4 - Deep Violet */}
         <motion.div
           animate={{
@@ -145,8 +148,9 @@ export const MidnightCyberBackground = ({
           }}
           transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
           style={{ background: "var(--nebula-4)" }}
-          className="absolute bottom-1/4 right-1/4 w-[550px] h-[550px] rounded-full opacity-30 dark:opacity-20 translate-z-0"
+          className="absolute bottom-1/4 right-1/4 w-[280px] h-[280px] md:w-[550px] md:h-[550px] rounded-full opacity-30 dark:opacity-20 translate-z-0"
         />
+
         {/* Floating Blob 5 - Slate Accents */}
         <motion.div
           animate={{
@@ -155,7 +159,7 @@ export const MidnightCyberBackground = ({
           }}
           transition={{ duration: 32, repeat: Infinity, ease: "linear" }}
           style={{ background: "var(--nebula-1)" }}
-          className="absolute top-1/3 left-1/2 w-[500px] h-[500px] rounded-full opacity-25 dark:opacity-10"
+          className="absolute top-1/3 left-1/2 w-[250px] h-[250px] md:w-[500px] md:h-[500px] rounded-full opacity-25 dark:opacity-10"
         />
       </div>
 

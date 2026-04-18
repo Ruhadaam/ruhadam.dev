@@ -16,14 +16,14 @@ export const ProfileSection = () => {
   const instagramData = t.raw("instagramProfile") || { title: "" };
 
   return (
-    <div className="w-full max-w-lg px-8 lg:px-12 py-16 flex flex-col items-start text-left">
+    <div className="w-full max-w-lg px-8 lg:px-12 py-10 lg:py-16 flex flex-col items-start text-left">
       {/* Profile Image & Brand */}
       <div className="w-full mb-10 flex flex-col items-start gap-8">
         <motion.div
           initial={{ x: -30, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, ease: [0.23, 1, 0.32, 1] }}
-          className="relative w-full max-w-[280px] aspect-square rounded-[3rem] overflow-hidden shadow-xl dark:shadow-2xl ring-1 ring-black/5 dark:ring-white/10 transition-shadow duration-700 hover:shadow-2xl"
+          className="relative w-full max-w-[200px] md:max-w-[280px] aspect-square rounded-[3rem] overflow-hidden shadow-xl dark:shadow-2xl ring-1 ring-black/5 dark:ring-white/10 transition-shadow duration-700 hover:shadow-2xl"
         >
           <Link href="/">
             <Image

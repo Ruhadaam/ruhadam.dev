@@ -24,14 +24,14 @@ export const AboutSection = () => {
   return (
     <div
       ref={containerRef}
-      className="w-full flex flex-col gap-32 py-10 relative overflow-hidden"
+      className="w-full flex flex-col gap-16 md:gap-32 py-10 relative overflow-hidden"
     >
       {/* Section 1: About Me (The Story) */}
       <div className="relative group">
         {/* Large Floating Background Label */}
         <motion.div
           style={{ opacity: storyOpacity }}
-          className="absolute -top-12 left-0 text-[8rem] md:text-[12rem] font-black text-zinc-900/30 dark:text-white/20 pointer-events-none select-none tracking-tighter"
+          className="absolute -top-12 left-0 text-[4.5rem] md:text-[8rem] lg:text-[12rem] font-black text-zinc-900/30 dark:text-white/20 pointer-events-none select-none tracking-tighter"
         >
           {t("about.backgroundLabel")}
         </motion.div>
@@ -64,7 +64,7 @@ export const AboutSection = () => {
         {/* Large Floating Background Label */}
         <motion.div
           style={{ x: passionX, opacity: 0.25 }}
-          className="absolute -top-20 right-0 text-[6rem] md:text-[10rem] font-black text-blue-500/30 dark:text-blue-400/20 pointer-events-none select-none tracking-tighter"
+          className="absolute -top-20 right-0 text-[4rem] md:text-[6rem] lg:text-[10rem] font-black text-blue-500/30 dark:text-blue-400/20 pointer-events-none select-none tracking-tighter"
         >
           {t("passion.backgroundLabel")}
         </motion.div>

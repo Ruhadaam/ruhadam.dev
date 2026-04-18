@@ -13,7 +13,7 @@ export default function Home() {
   const t = useTranslations("Index");
 
   return (
-    <div className="w-full min-h-full flex flex-col items-center justify-center lg:items-start lg:justify-start px-6 lg:px-12 py-20 gap-48">
+    <div className="w-full min-h-full flex flex-col items-center justify-center lg:items-start lg:justify-start px-6 lg:px-12 lg:py-20 py-10 gap-48">
       {/* Hero Section */}
       <div className="max-w-2xl space-y-8">
         {/* ... existing hero code ... */}
@@ -27,10 +27,16 @@ export default function Home() {
               {t("slogan")}
             </span>
           </motion.div>
-          
-          <Heading delay={0.2} className="text-4xl md:text-6xl lg:text-7xl leading-tight">
-            {t("heroTitle1")} {t("heroTitle2")}<br />
-            <span className="text-zinc-400 dark:text-zinc-600">{t("heroTitleSoul")}</span>
+
+          <Heading
+            delay={0.2}
+            className="text-4xl md:text-6xl lg:text-7xl leading-tight"
+          >
+            {t("heroTitle1")} {t("heroTitle2")}
+            <br />
+            <span className="text-zinc-400 dark:text-zinc-600">
+              {t("heroTitleSoul")}
+            </span>
           </Heading>
         </div>
 
@@ -40,15 +46,15 @@ export default function Home() {
           transition={{ delay: 0.6, duration: 1 }}
           className="flex flex-wrap gap-6 items-center"
         >
-          <Link 
+          <Link
             href="/resume"
             className="group flex items-center gap-3 px-8 py-4 rounded-full bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-bold hover:scale-105 active:scale-95 transition-all shadow-xl hover:shadow-2xl hover:shadow-blue-500/20"
           >
             {t("heroCta")}
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
-          
-          <Link 
+
+          <Link
             href="/github"
             className="group font-bold text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors"
           >

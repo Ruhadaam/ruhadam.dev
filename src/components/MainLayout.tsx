@@ -37,7 +37,7 @@ export default function MainLayout({
   const isHome = pathname === "/" || pathname === "/tr" || pathname === "/en";
 
   return (
-    <main className="relative h-screen w-full overflow-hidden bg-white/0 dark:bg-zinc-950/0 font-sans antialiased text-zinc-900 dark:text-zinc-50">
+    <main className="relative min-h-screen lg:h-screen w-full lg:overflow-hidden bg-white/0 dark:bg-zinc-950/0 font-sans antialiased text-zinc-900 dark:text-zinc-50">
       {/* Midnight Cyber Background (Previously Aurora) */}
       <div className="fixed inset-0 z-0">
         <MidnightCyberBackground className="opacity-100" />
@@ -45,15 +45,15 @@ export default function MainLayout({
 
       {/* 40/60 Split Layout */}
       <div className="relative z-10 grid grid-cols-1 lg:grid-cols-[40%_60%] h-full">
-        {/* Left Side: Sidebar (Static) */}
-        <section className="relative flex items-center justify-center lg:justify-end h-full overflow-y-auto">
+        {/* Left Side: Sidebar (Static on desktop, scrollable on mobile) */}
+        <section className="relative flex items-center justify-center lg:justify-end h-auto lg:h-full lg:overflow-y-auto">
           <ProfileSection />
         </section>
 
         {/* Right Side: Dynamic Content (Scrollable) */}
         <section
           ref={scrollContainerRef}
-          className="relative h-full overflow-y-auto overflow-x-hidden pt-10 pb-32 lg:pb-20"
+          className="relative h-auto lg:h-full lg:overflow-y-auto lg:overflow-x-hidden pt-10 pb-32 lg:pb-20"
         >
           {children}
         </section>
