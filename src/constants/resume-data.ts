@@ -54,7 +54,7 @@ export const resumeData: ResumeItem[] = [
       "Sosyal medya ve reklam içerikleri üretimi.",
       "Baskı öncesi hazırlık ve tasarım süreçleri."
     ],
-    technologies: ["Photoshop", "Illustrator", "Figma"]
+    technologies: ["Photoshop", "Illustrator", "Nodejs"]
   },
   {
     id: "exp-4",
@@ -89,6 +89,6 @@ export const resumeData: ResumeItem[] = [
 export const skills = [
   "React.js", "Next.js", "React Native", "TypeScript", 
   "Tailwind CSS", "Framer Motion", "Expo", "Redux",
-  "Node.js", "Firebase", "Photoshop", "Figma", 
+  "Node.js", "Firebase", "Photoshop", "Nodejs", 
   "Illustrator", "UI/UX Design", "Git", "REST APIs"
 ];

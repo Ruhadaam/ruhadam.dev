@@ -34,7 +34,7 @@ export default function Home() {
           >
             {t("heroTitle1")} {t("heroTitle2")}
             <br />
-            <span className="text-zinc-400 dark:text-zinc-600">
+            <span className="bg-linear-to-r from-indigo-500 via-blue-500 to-emerald-500 bg-clip-text text-transparent animate-gradient-slow">
               {t("heroTitleSoul")}
             </span>
           </Heading>
@@ -48,10 +48,10 @@ export default function Home() {
         >
           <Link
             href="/resume"
-            className="group flex items-center gap-3 px-8 py-4 rounded-full bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-bold hover:scale-105 active:scale-95 transition-all shadow-xl hover:shadow-2xl hover:shadow-blue-500/20"
+            className="group animate-glow flex items-center gap-3 px-8 py-4 rounded-full bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-bold hover:scale-[1.02] active:scale-95 transition-all duration-700 ease-[0.23,1,0.32,1] shadow-xl hover:shadow-2xl hover:shadow-blue-500/30"
           >
             {t("heroCta")}
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-500" />
           </Link>
 
           <Link

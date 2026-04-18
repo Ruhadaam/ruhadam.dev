@@ -3,30 +3,44 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { 
-  Briefcase, 
-  GraduationCap, 
-  Calendar, 
-  MapPin, 
-  CheckCircle2
+import {
+  Briefcase,
+  GraduationCap,
+  Calendar,
+  MapPin,
+  CheckCircle2,
 } from "lucide-react";
 import { Card } from "@/src/components/ui/card";
 import { Heading } from "@/src/components/ui/heading";
 import { Text } from "@/src/components/ui/text";
 
 const ResumeItemIds = [
-  { id: "exp1", type: "experience", tech: ["React.js", "Next.js", "TypeScript"] },
-  { id: "exp2", type: "experience", tech: ["React Native", "Expo", "Redux", "Firebase"] },
-  { id: "exp3", type: "experience", tech: ["Photoshop", "Illustrator", "Figma"] },
+  {
+    id: "exp1",
+    type: "experience",
+    tech: ["React.js", "Next.js", "TypeScript"],
+  },
+  {
+    id: "exp2",
+    type: "experience",
+    tech: ["React Native", "Expo", "Redux", "Firebase"],
+  },
+  {
+    id: "exp3",
+    type: "experience",
+    tech: ["Photoshop", "Illustrator", "Nodejs"],
+  },
   { id: "exp4", type: "experience", tech: ["CSS", "Photoshop", "HTML"] },
-  { id: "edu1", type: "education" }
+  { id: "edu1", type: "education" },
 ] as const;
 
 interface ExperienceTimelineProps {
   showTitle?: boolean;
 }
 
-export const ExperienceTimeline = ({ showTitle = true }: ExperienceTimelineProps) => {
+export const ExperienceTimeline = ({
+  showTitle = true,
+}: ExperienceTimelineProps) => {
   const t = useTranslations("Resume");
   const tIndex = useTranslations("Index");
 
@@ -81,7 +95,9 @@ export const ExperienceTimeline = ({ showTitle = true }: ExperienceTimelineProps
                       <GraduationCap className="w-3 h-3" />
                     )}
                     <span className="text-[10px] font-bold uppercase tracking-wider">
-                      {item.type === "experience" ? t("labels.experience") : t("labels.education")}
+                      {item.type === "experience"
+                        ? t("labels.experience")
+                        : t("labels.education")}
                     </span>
                   </div>
                   <div className="flex items-center gap-1.5 text-[11px] font-medium text-zinc-500 dark:text-zinc-400">
@@ -107,17 +123,22 @@ export const ExperienceTimeline = ({ showTitle = true }: ExperienceTimelineProps
 
                 {/* Description */}
                 <ul className="space-y-2">
-                  {[0, 1, 2].map(i => {
+                  {[0, 1, 2].map((i) => {
                     try {
-                        const desc = t.raw(`${item.id}.desc`)[i];
-                        if (!desc) return null;
-                        return (
-                            <li key={i} className="flex items-start gap-2.5 text-sm text-zinc-500 dark:text-zinc-400">
-                              <CheckCircle2 className="w-4 h-4 mt-0.5 text-blue-500/60 shrink-0" />
-                              <span>{desc}</span>
-                            </li>
-                        );
-                    } catch { return null; }
+                      const desc = t.raw(`${item.id}.desc`)[i];
+                      if (!desc) return null;
+                      return (
+                        <li
+                          key={i}
+                          className="flex items-start gap-2.5 text-sm text-zinc-500 dark:text-zinc-400"
+                        >
+                          <CheckCircle2 className="w-4 h-4 mt-0.5 text-blue-500/60 shrink-0" />
+                          <span>{desc}</span>
+                        </li>
+                      );
+                    } catch {
+                      return null;
+                    }
                   })}
                 </ul>
 
