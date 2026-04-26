@@ -5,6 +5,7 @@ import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import { ThemeProvider } from "@/src/components/ui/theme-provider";
 import MainLayout from "@/src/components/MainLayout";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -34,6 +35,7 @@ export default async function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <NextIntlClientProvider locale={locale} messages={messages}>
             <MainLayout>{children}</MainLayout>
+            <Analytics />
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
