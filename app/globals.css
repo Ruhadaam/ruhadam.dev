@@ -46,35 +46,8 @@ html {
 }
 
 @theme {
-  /* Daha yumuşak ve doğal akış animasyonları */
-  --animate-smoke: smoke 30s ease-in-out infinite alternate;
-  --animate-float: float 20s ease-in-out infinite;
-  
-  /* Missing Nordic Night Aurora (For reference) */
-  --aurora-1: #10b981;
-  --aurora-2: #06b6d4;
-  --aurora-3: #3b82f6;
-  --aurora-4: #6366f1;
-  --animate-aurora: aurora 80s linear infinite;
   --animate-gradient-slow: gradient-slow 8s linear infinite;
   --animate-glow: glow 4s ease-in-out infinite;
-}
-
-@keyframes smoke {
-  0% { transform: translate(-5%, -5%) scale(1); opacity: 0.3; }
-  50% { transform: translate(5%, 5%) scale(1.1); opacity: 0.5; }
-  100% { transform: translate(-2%, 8%) scale(0.95); opacity: 0.3; }
-}
-
-@keyframes float {
-  0% { transform: rotate(0deg) translate(-50%, -50%); }
-  50% { transform: rotate(180deg) translate(-45%, -55%); }
-  100% { transform: rotate(360deg) translate(-50%, -50%); }
-}
-
-@keyframes aurora {
-  from { background-position: 50% 50%, 50% 50%, 50% 50%, 50% 50%; }
-  to { background-position: 350% 50%, 350% 50%, 150% 50%, 150% 50%; }
 }
 
 @keyframes gradient-slow {
@@ -97,4 +70,16 @@ body {
   background: var(--background);
   color: var(--foreground);
   transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+/* Accessibility: disable all animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

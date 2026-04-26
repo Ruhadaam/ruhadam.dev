@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { Moon, Sun } from "lucide-react";
-import { useTheme } from "next-themes";
+import { useTheme } from "@/src/components/ThemeProvider";
 
 export function ThemeSwitcher() {
   const { theme, setTheme, resolvedTheme } = useTheme();
@@ -19,17 +19,7 @@ export function ThemeSwitcher() {
   }
 
   const toggleTheme = () => {
-    // Systematic toggle: Light -> Dark -> System -> Light
-    const nextThemes: Record<string, string> = {
-      light: "dark",
-      dark: "system",
-      system: "light",
-    };
-    
-    const currentTheme = theme || "system";
-    const newTheme = nextThemes[currentTheme] || "system";
-    
-    setTheme(newTheme);
+    setTheme(resolvedTheme === "light" ? "dark" : "light");
   };
 
   return (
@@ -47,7 +37,7 @@ export function ThemeSwitcher() {
       </div>
       
       <span className="text-[0.65rem] font-bold uppercase tracking-[0.05em] select-none">
-        {theme === "system" ? "Auto" : theme}
+        {resolvedTheme === "light" ? "Light" : "Dark"}
       </span>
     </button>
   );

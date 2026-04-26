@@ -23,7 +23,8 @@ export const AboutSection = () => {
   return (
     <div
       ref={containerRef}
-      className="w-full flex flex-col gap-16 md:gap-32 py-10 relative overflow-hidden"
+      style={{ position: "relative" }}
+      className="w-full flex flex-col gap-16 md:gap-32 py-10 overflow-hidden"
     >
       {/* Section 1: About Me (The Story) */}
       <div className="relative group">

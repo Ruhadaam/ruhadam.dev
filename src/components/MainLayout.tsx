@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { useTheme } from "next-themes";
 import { ProfileSection } from "@/src/components/ui/profile-section";
 import { ThemeSwitcher } from "@/src/components/ui/theme-switcher";
 import { LocaleSwitcher } from "@/src/components/ui/locale-switcher";
@@ -16,9 +15,8 @@ export default function MainLayout({
   children: React.ReactNode;
 }) {
   const t = useTranslations("Footer");
-  const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  const scrollContainerRef = useRef<HTMLElement>(null);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -28,15 +26,12 @@ export default function MainLayout({
     return () => cancelAnimationFrame(handle);
   }, []);
 
-  // View değiştikçe sağ paneli en üste kaydırır
+  // Scroll right panel to top on route change
   useEffect(() => {
     if (scrollContainerRef.current) {
       scrollContainerRef.current.scrollTo({ top: 0, behavior: "smooth" });
     }
   }, [pathname]);
-
-  // Animation trigger for background transition
-  const isHome = pathname === "/" || pathname === "/tr" || pathname === "/en";
 
   return (
     <main className="relative min-h-screen lg:h-screen w-full lg:overflow-hidden bg-white/0 dark:bg-zinc-950/0 font-sans antialiased text-zinc-900 dark:text-zinc-50">
@@ -48,17 +43,21 @@ export default function MainLayout({
       {/* 40/60 Split Layout */}
       <div className="relative z-10 grid grid-cols-1 lg:grid-cols-[40%_60%] h-full">
         {/* Left Side: Sidebar (Static on desktop, scrollable on mobile) */}
-        <section className="relative flex items-center justify-center lg:justify-end h-auto lg:h-full lg:overflow-y-auto">
+        <section
+          style={{ position: "relative" }}
+          className="flex items-center justify-center lg:justify-end h-auto lg:h-full lg:overflow-y-auto"
+        >
           <ProfileSection />
         </section>
 
         {/* Right Side: Dynamic Content (Scrollable) */}
-        <section
+        <div
           ref={scrollContainerRef}
-          className="relative h-auto lg:h-full lg:overflow-y-auto pt-20 lg:overflow-x-hidden  pb-32 lg:pb-20"
+          style={{ position: "relative" }}
+          className="h-auto lg:h-full lg:overflow-y-auto pt-20 lg:overflow-x-hidden pb-32 lg:pb-20"
         >
           {children}
-        </section>
+        </div>
       </div>
 
       {/* Footer Controls */}

@@ -33,11 +33,12 @@ export const ProfileSection = () => {
         >
           <Link href="/" className="relative block w-full h-full">
             <Image
-              src="/images/avatar.jpeg"
-              alt="Professional Avatar"
+              src="/images/avatar.webp"
+              alt="Alperen Gökcek — Software Developer"
               fill
               className="object-cover grayscale-0 lg:grayscale brightness-90 group-hover:grayscale-0 group-hover:brightness-105 group-hover:contrast-110 transition-all duration-700 scale-100 group-hover:scale-110"
-              sizes="280px"
+              sizes="(max-width: 768px) 200px, 280px"
+              quality={90}
               priority
             />
           </Link>

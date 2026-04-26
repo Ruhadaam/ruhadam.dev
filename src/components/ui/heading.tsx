@@ -9,7 +9,7 @@ interface HeadingProps extends HTMLMotionProps<"h1"> {
   animateLetters?: boolean;
 }
 
-export const Heading = ({ children, className, delay = 0, animateLetters = true, ...props }: HeadingProps) => {
+export const Heading = ({ children, className, delay = 0, animateLetters = false, ...props }: HeadingProps) => {
   const text = typeof children === "string" ? children : "";
   const characters = text.split("");
 

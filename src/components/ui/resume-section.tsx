@@ -44,9 +44,11 @@ export const ResumeSection = () => {
           <div className="relative flex flex-col sm:flex-row items-center gap-6">
             <div className="relative w-20 h-20 rounded-2xl overflow-hidden ring-4 ring-white dark:ring-zinc-900 shadow-xl">
               <Image
-                src="/images/avatar.jpeg"
+                src="/images/avatar.webp"
                 alt="Alperen Gökçek"
                 fill
+                sizes="80px"
+                quality={90}
                 className="object-cover transition-all duration-700 group-hover:scale-110 grayscale-0 lg:grayscale brightness-90 group-hover:grayscale-0 group-hover:brightness-100"
               />
               <div className="absolute inset-0 bg-blue-500/20 group-hover:bg-transparent transition-all duration-700" />
@@ -78,8 +80,9 @@ export const ResumeSection = () => {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         transition={{ duration: 0.8 }}
+        style={{ position: "relative" }}
         className="space-y-6 pb-20"
       >
         <div className="flex items-center gap-3">
