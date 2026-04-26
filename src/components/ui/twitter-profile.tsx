@@ -19,13 +19,13 @@ export const TwitterProfile = () => {
       <Card className="p-0 overflow-hidden border-none shadow-2xl bg-zinc-50/50 dark:bg-zinc-900/50 mb-4">
         {/* Banner */}
         <div className="h-32 w-full bg-linear-to-r from-blue-400 to-blue-600 dark:from-blue-600 dark:to-blue-900 opacity-80" />
-        
+
         <div className="px-6 pb-6 relative">
           {/* Avatar */}
           <div className="absolute -top-12 left-6">
             <div className="relative w-24 h-24 rounded-full border-4 border-white dark:border-zinc-900 overflow-hidden bg-white dark:bg-zinc-800 shadow-xl">
               <Image
-                src="/images/avatar.png"
+                src="/images/avatar.jpeg"
                 alt={twitterData.title}
                 fill
                 sizes="(max-width: 96px) 100vw, 96px"
@@ -38,7 +38,10 @@ export const TwitterProfile = () => {
           <div className="pt-14 flex justify-between items-start">
             <div>
               <div className="flex items-center gap-1">
-                <Heading className="text-xl md:text-2xl mb-0" animateLetters={false}>
+                <Heading
+                  className="text-xl md:text-2xl mb-0"
+                  animateLetters={false}
+                >
                   {twitterData.title}
                 </Heading>
                 <Verified className="w-5 h-5 text-blue-500 fill-blue-500/20" />
@@ -47,8 +50,8 @@ export const TwitterProfile = () => {
                 @{twitterData.handle}
               </Text>
             </div>
-            
-            <a 
+
+            <a
               href={`https://twitter.com/${twitterData.handle}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -66,11 +69,17 @@ export const TwitterProfile = () => {
 
           <div className="mt-4 flex gap-4 text-sm">
             <div className="flex gap-1 items-center">
-              <span className="font-bold text-zinc-900 dark:text-white">{twitterData.following}</span>
-              <span className="text-zinc-500 dark:text-zinc-400">Takip Edilen</span>
+              <span className="font-bold text-zinc-900 dark:text-white">
+                {twitterData.following}
+              </span>
+              <span className="text-zinc-500 dark:text-zinc-400">
+                Takip Edilen
+              </span>
             </div>
             <div className="flex gap-1 items-center">
-              <span className="font-bold text-zinc-900 dark:text-white">{twitterData.followers}</span>
+              <span className="font-bold text-zinc-900 dark:text-white">
+                {twitterData.followers}
+              </span>
               <span className="text-zinc-500 dark:text-zinc-400">Takipçi</span>
             </div>
           </div>

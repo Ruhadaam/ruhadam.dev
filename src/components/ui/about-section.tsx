@@ -19,7 +19,6 @@ export const AboutSection = () => {
     [0, 0.3, 0.6],
     [0, 0.1, 0],
   );
-  const passionX = useTransform(scrollYProgress, [0.3, 0.9], [50, -50]);
 
   return (
     <div
@@ -63,8 +62,8 @@ export const AboutSection = () => {
       <div className="relative group self-end text-right flex flex-col items-end">
         {/* Large Floating Background Label */}
         <motion.div
-          style={{ x: passionX, opacity: 0.25 }}
-          className="absolute -top-20 right-0 text-[4rem] md:text-[6rem] lg:text-[10rem] font-black text-blue-500/30 dark:text-blue-400/20 pointer-events-none select-none tracking-tighter"
+          style={{ opacity: 0.25 }}
+          className="absolute -top-10 right-4 md:right-8 text-[4rem] md:text-[6rem] lg:text-[10rem] font-black text-blue-500/30 dark:text-blue-400/20 pointer-events-none select-none tracking-tighter"
         >
           {t("passion.backgroundLabel")}
         </motion.div>

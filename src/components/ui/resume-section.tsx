@@ -3,14 +3,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { 
-  Briefcase, 
-  GraduationCap, 
-  Calendar, 
-  MapPin, 
-  CheckCircle2, 
-  Linkedin, 
-  ExternalLink 
+import {
+  Briefcase,
+  GraduationCap,
+  Calendar,
+  MapPin,
+  CheckCircle2,
+  Linkedin,
+  ExternalLink,
 } from "lucide-react";
 import Image from "next/image";
 import { Card } from "@/src/components/ui/card";
@@ -24,33 +24,34 @@ export const ResumeSection = () => {
 
   return (
     <div className="w-full max-w-2xl px-6 lg:px-8 py-10 flex flex-col gap-12 self-start ml-0 lg:ml-4 text-left">
-      
       {/* LinkedIn Profile Card (Header) */}
       <motion.div
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        <Card 
-          onClick={() => window.open("https://www.linkedin.com/in/alperen-gokcek/", "_blank")}
+        <Card
+          onClick={() =>
+            window.open("https://www.linkedin.com/in/alperen-gokcek/", "_blank")
+          }
           className="group relative p-6 bg-blue-500/5 dark:bg-blue-500/10 border-blue-500/20 dark:border-blue-500/20 
                      overflow-hidden cursor-pointer hover:bg-blue-500/10 dark:hover:bg-blue-500/15 
                      transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-500/10"
         >
           {/* Animated Background Glow */}
           <div className="absolute -right-10 -top-10 w-40 h-40 bg-blue-500/10 blur-[80px] group-hover:bg-blue-500/20 transition-all duration-700" />
-          
+
           <div className="relative flex flex-col sm:flex-row items-center gap-6">
             <div className="relative w-20 h-20 rounded-2xl overflow-hidden ring-4 ring-white dark:ring-zinc-900 shadow-xl">
               <Image
-                src="/images/avatar.png"
+                src="/images/avatar.jpeg"
                 alt="Alperen Gökçek"
                 fill
-                className="object-cover"
+                className="object-cover transition-all duration-700 group-hover:scale-110 grayscale-0 lg:grayscale brightness-90 group-hover:grayscale-0 group-hover:brightness-100"
               />
-              <div className="absolute inset-0 bg-blue-500/10 group-hover:bg-transparent transition-colors" />
+              <div className="absolute inset-0 bg-blue-500/20 group-hover:bg-transparent transition-all duration-700" />
             </div>
-            
+
             <div className="flex-1 text-center sm:text-left space-y-1">
               <div className="flex items-center justify-center sm:justify-start gap-2">
                 <Heading className="text-2xl" animateLetters={false}>
@@ -88,7 +89,7 @@ export const ResumeSection = () => {
           </h4>
           <div className="h-px flex-1 bg-zinc-200 dark:bg-white/10" />
         </div>
-        
+
         <div className="flex flex-wrap justify-center gap-2 max-w-xl mx-auto">
           {skills.map((skill, idx) => (
             <motion.span

@@ -10,27 +10,27 @@ import { Link } from "@/src/i18n/routing";
 
 export const ProfileSection = () => {
   const t = useTranslations("Index");
-  
+
   // Explicitly fetch social data with fallbacks to prevent ReferenceErrors
   const twitterData = t.raw("twitterProfile") || { handle: "" };
   const instagramData = t.raw("instagramProfile") || { title: "" };
 
   return (
-    <div className="w-full max-w-lg px-8 lg:px-12 py-10 lg:py-16 flex flex-col items-start text-left">
+    <div className="w-full max-w-lg px-8 lg:px-12 py-10 lg:py-16 flex flex-col items-center lg:items-start text-center lg:text-left">
       {/* Profile Image & Brand */}
-      <div className="w-full mb-10 flex flex-col items-start gap-8">
+      <div className="w-full mb-10 flex flex-col items-center lg:items-start gap-8">
         <motion.div
           initial={{ x: -30, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, ease: [0.23, 1, 0.32, 1] }}
-          className="relative w-full max-w-[200px] md:max-w-[280px] aspect-square rounded-[3rem] overflow-hidden shadow-xl dark:shadow-2xl ring-1 ring-black/5 dark:ring-white/10 transition-shadow duration-700 hover:shadow-2xl"
+          className="group relative w-full max-w-[200px] md:max-w-[280px] aspect-square rounded-[3rem] overflow-hidden shadow-xl dark:shadow-2xl ring-1 ring-black/5 dark:ring-white/10 transition-all duration-700 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-1"
         >
           <Link href="/">
             <Image
-              src="/images/avatar.png"
+              src="/images/avatar.jpeg"
               alt="Professional Avatar"
               fill
-              className="object-cover grayscale hover:grayscale-0 transition-all duration-1000 scale-105 hover:scale-100"
+              className="object-cover grayscale-0 lg:grayscale brightness-90 group-hover:grayscale-0 group-hover:brightness-105 group-hover:contrast-110 transition-all duration-700 scale-100 group-hover:scale-110"
               sizes="280px"
               priority
             />
@@ -56,7 +56,7 @@ export const ProfileSection = () => {
         initial={{ x: -20, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.8 }}
-        className="flex gap-3 mb-10"
+        className="flex justify-center lg:justify-start gap-3 mb-10"
       >
         <a
           href="https://github.com/ruhadaam"

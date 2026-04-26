@@ -39,7 +39,7 @@ export const InstagramGrid = () => {
         <div className="relative w-32 h-32 rounded-full p-1 bg-linear-to-tr from-yellow-400 via-pink-500 to-purple-600">
           <div className="w-full h-full rounded-full border-4 border-white dark:border-zinc-950 overflow-hidden relative bg-white dark:bg-zinc-800">
             <Image
-              src="/images/avatar.png"
+              src="/images/avatar.jpeg"
               alt={instagramData.title}
               fill
               className="object-cover"
@@ -49,7 +49,10 @@ export const InstagramGrid = () => {
 
         <div className="flex flex-col gap-4 flex-1 items-center md:items-start text-center md:text-left">
           <div className="flex flex-col md:flex-row items-center gap-4">
-            <Heading className="text-xl md:text-2xl mb-0" animateLetters={false}>
+            <Heading
+              className="text-xl md:text-2xl mb-0"
+              animateLetters={false}
+            >
               {instagramData.title}
             </Heading>
             <div className="flex gap-2">
@@ -64,21 +67,30 @@ export const InstagramGrid = () => {
 
           <div className="flex gap-6 text-sm">
             <div className="flex gap-1 items-center">
-              <span className="font-bold text-zinc-900 dark:text-white">{instagramData.posts}</span>
+              <span className="font-bold text-zinc-900 dark:text-white">
+                {instagramData.posts}
+              </span>
               <span className="text-zinc-500 dark:text-zinc-400">Gönderi</span>
             </div>
             <div className="flex gap-1 items-center">
-              <span className="font-bold text-zinc-900 dark:text-white">{instagramData.followers}</span>
+              <span className="font-bold text-zinc-900 dark:text-white">
+                {instagramData.followers}
+              </span>
               <span className="text-zinc-500 dark:text-zinc-400">Takipçi</span>
             </div>
             <div className="flex gap-1 items-center">
-              <span className="font-bold text-zinc-900 dark:text-white">{instagramData.following}</span>
+              <span className="font-bold text-zinc-900 dark:text-white">
+                {instagramData.following}
+              </span>
               <span className="text-zinc-500 dark:text-zinc-400">Takip</span>
             </div>
           </div>
 
           <div className="max-w-sm">
-            <Text className="text-sm font-medium text-zinc-800 dark:text-zinc-200" animateLetters={false}>
+            <Text
+              className="text-sm font-medium text-zinc-800 dark:text-zinc-200"
+              animateLetters={false}
+            >
               {instagramData.bio}
             </Text>
           </div>
@@ -123,7 +135,7 @@ export const InstagramGrid = () => {
                 {item.comments}
               </span>
             </div>
-            
+
             {/* Glossy Overlay for Premium Look */}
             <div className="absolute inset-x-0 top-0 h-1/2 bg-linear-to-b from-white/10 to-transparent pointer-events-none" />
           </motion.div>

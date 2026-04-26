@@ -62,16 +62,9 @@ export default function MainLayout({
       </div>
 
       {/* Footer Controls */}
-      <footer className="fixed bottom-4 md:bottom-8 left-4 md:left-8 right-4 md:right-8 z-50 flex flex-col md:flex-row items-center justify-between gap-5 md:gap-0 pointer-events-none">
-        {/* Left: Copyright */}
-        <div className="pointer-events-auto w-full md:w-[250px] flex justify-center md:justify-start order-3 md:order-1">
-          <Text className="text-[0.65rem] font-medium text-zinc-400 dark:text-zinc-500 tracking-wider uppercase">
-            © 2026 ruhadam.dev
-          </Text>
-        </div>
-
+      <footer className="fixed bottom-4 md:bottom-8 left-4 md:left-8 right-4 md:right-8 z-50 flex flex-col md:flex-row items-center justify-between gap-3 md:gap-0 pointer-events-none">
         {/* Center: Quote */}
-        <div className="pointer-events-auto flex-1 flex items-center justify-center text-center order-1 md:order-2 px-2">
+        <div className="pointer-events-auto flex-1 flex items-center justify-center text-center px-2 order-1 md:order-2">
           <p className="text-[0.55rem] md:text-[0.6rem] text-zinc-500 dark:text-zinc-400 font-medium leading-tight max-w-3xl">
             <span className="italic">"{t("quote")}"</span>
             <span className="mx-1.5 md:mx-2 text-zinc-300 dark:text-zinc-700 font-light">
@@ -83,10 +76,20 @@ export default function MainLayout({
           </p>
         </div>
 
-        {/* Right: Controls */}
-        <div className="flex items-center gap-3 pointer-events-auto w-full md:w-[250px] justify-center md:justify-end order-2 md:order-3">
-          <ThemeSwitcher />
-          <LocaleSwitcher />
+        {/* Mobile Row: Copyright & Controls together */}
+        <div className="pointer-events-auto w-full md:w-auto flex flex-row items-center justify-between md:contents order-2">
+          {/* Left: Copyright */}
+          <div className="md:w-[250px] flex justify-start md:order-1">
+            <Text className="text-[0.55rem] md:text-[0.65rem] font-medium text-zinc-400 dark:text-zinc-500 tracking-wider uppercase">
+              © 2026 <span className="hidden sm:inline">ruhadam.dev</span>
+            </Text>
+          </div>
+
+          {/* Right: Controls */}
+          <div className="flex items-center gap-2 md:gap-3 md:w-[250px] justify-end md:order-3">
+            <ThemeSwitcher />
+            <LocaleSwitcher />
+          </div>
         </div>
       </footer>
     </main>
