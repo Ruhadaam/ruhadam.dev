@@ -15,6 +15,7 @@
     "heroTitleSoul": "Soul in every pixel.",
     "heroCta": "Explore My Journey",
     "heroSecondaryCta": "View Projects",
+    "contactCta": "Get in Touch",
     "resumeTitle": "Professional Experience",
     "resumeSubtitle": "My Career & Education Timeline",
     "techStackTitle": "Tech Stack",
@@ -138,5 +139,29 @@
     "quote": "They wept a little, but are used to it now. Man, the scoundrel, gets used to everything!",
     "author": "Fyodor Dostoevsky",
     "book": "Crime and Punishment"
+  },
+  "Contact": {
+    "badge": "Contact",
+    "title": "Let's Create Together.",
+    "description": "Have a project in mind or just want to say hi? Fill out the form or reach out to me directly.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "subjects": {
+        "collaboration": "Collaboration",
+        "project": "Project Proposal",
+        "question": "General Inquiry",
+        "other": "Other"
+      },
+      "message": "Your Message",
+      "messagePlaceholder": "Tell me about your dream project...",
+      "submit": "Send Message"
+    },
+    "status": {
+      "sending": "Sending...",
+      "success": "Your message has been sent successfully! I'll get back to you soon.",
+      "error": "Something went wrong. Please try again."
+    }
   }
 }

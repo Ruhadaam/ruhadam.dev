@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { Github, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Github, Twitter, Linkedin, Instagram, MessageSquare } from "lucide-react";
 import { Heading } from "@/src/components/ui/heading";
 import { Text } from "@/src/components/ui/text";
 import { Link } from "@/src/i18n/routing";
@@ -99,6 +99,22 @@ export const ProfileSection = () => {
         >
           <Instagram className="w-4.5 h-4.5 transition-transform duration-300 group-hover/btn:scale-110 group-hover/btn:rotate-12" />
         </a>
+      </motion.div>
+
+      {/* Contact CTA */}
+      <motion.div
+        initial={{ x: -20, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ delay: 0.6, duration: 0.8 }}
+        className="mb-8 w-full md:w-auto"
+      >
+        <Link
+          href="/contact"
+          className="flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-blue-500 text-white font-bold text-sm hover:bg-blue-600 hover:scale-[1.02] active:scale-95 transition-all shadow-lg shadow-blue-500/20"
+        >
+          <MessageSquare className="w-4 h-4" />
+          {t("contactCta")}
+        </Link>
       </motion.div>
 
       {/* Short Bio Section */}

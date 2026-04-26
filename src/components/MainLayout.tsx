@@ -55,7 +55,7 @@ export default function MainLayout({
         {/* Right Side: Dynamic Content (Scrollable) */}
         <section
           ref={scrollContainerRef}
-          className="relative h-auto lg:h-full lg:overflow-y-auto lg:overflow-x-hidden pt-10 pb-32 lg:pb-20"
+          className="relative h-auto lg:h-full lg:overflow-y-auto lg:overflow-x-hidden  pb-32 lg:pb-20"
         >
           {children}
         </section>

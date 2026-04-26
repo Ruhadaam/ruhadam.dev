@@ -60,6 +60,14 @@ export default function Home() {
           >
             {t("heroSecondaryCta")}
           </Link>
+
+          <Link
+            href="/contact"
+            className="group font-bold text-sm text-blue-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center gap-2"
+          >
+            {t("contactCta")}
+            <ArrowRight className="w-3.5 h-3.5 -rotate-45 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+          </Link>
         </motion.div>
       </div>
 

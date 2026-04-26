@@ -15,9 +15,10 @@
     "heroTitleSoul": "Her pikselde ruh.",
     "heroCta": "Yolculuğumu Keşfet",
     "heroSecondaryCta": "Projeleri Gör",
+    "contactCta": "İletişime Geç",
     "resumeTitle": "Profesyonel Deneyim",
     "resumeSubtitle": "Kariyer ve Eğitim Zaman Çizelgem",
-    "techStackTitle": "Teknoloji Ekosistemi",
+    "techStackTitle": "Kullandığım Teknolojiler",
     "linkedinProfileCard": {
       "title": "Alperen Gökçek",
       "subtitle": "Yazılım & Tasarım",
@@ -138,5 +139,29 @@
     "quote": "Önce biraz ağladılar, ama alıştılar şimdi. Aşağılık insanoğlu her şeye alışır!",
     "author": "Fyodor Dostoyevski",
     "book": "Suç ve Ceza"
+  },
+  "Contact": {
+    "badge": "İletişim",
+    "title": "Birlikte Yaratalım.",
+    "description": "Bir projeniz mi var yoksa sadece merhaba mı demek istiyorsunuz? Formu doldurun veya bana doğrudan ulaşın.",
+    "form": {
+      "name": "Ad Soyad",
+      "email": "E-posta Adresi",
+      "subject": "Konu",
+      "subjects": {
+        "collaboration": "İş Birliği",
+        "project": "Proje Teklifi",
+        "question": "Genel Soru",
+        "other": "Diğer"
+      },
+      "message": "Mesajınız",
+      "messagePlaceholder": "Hayalinizdeki projeden bahsedin...",
+      "submit": "Mesaj Gönder"
+    },
+    "status": {
+      "sending": "Gönderiliyor...",
+      "success": "Mesajınız başarıyla gönderildi! En kısa sürede döneceğim.",
+      "error": "Bir hata oluştu. Lütfen tekrar deneyin."
+    }
   }
 }
