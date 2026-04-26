@@ -29,7 +29,7 @@ export const AboutSection = () => {
       <div className="relative group">
         {/* Large Floating Background Label */}
         <motion.div
-          style={{ opacity: storyOpacity }}
+          style={{ opacity: storyOpacity, willChange: "opacity" }}
           className="absolute -top-12 left-0 text-[4.5rem] md:text-[8rem] lg:text-[12rem] font-black text-zinc-900/30 dark:text-white/20 pointer-events-none select-none tracking-tighter"
         >
           {t("about.backgroundLabel")}
@@ -62,7 +62,7 @@ export const AboutSection = () => {
       <div className="relative group self-end text-right flex flex-col items-end">
         {/* Large Floating Background Label */}
         <motion.div
-          style={{ opacity: 0.25 }}
+          style={{ opacity: 0.25, willChange: "opacity" }}
           className="absolute -top-10 right-4 md:right-8 text-[4rem] md:text-[6rem] lg:text-[10rem] font-black text-blue-500/30 dark:text-blue-400/20 pointer-events-none select-none tracking-tighter"
         >
           {t("passion.backgroundLabel")}

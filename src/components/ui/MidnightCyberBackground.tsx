@@ -78,7 +78,6 @@ export const MidnightCyberBackground = ({
       {...props}
     >
       {/* SVG Metaball Filter */}
-      {/* GÜNCELLENMİŞ SVG Metaball Filter */}
       <svg className="hidden">
         <defs>
           <filter id="liquid-essence" colorInterpolationFilters="sRGB">
@@ -87,14 +86,12 @@ export const MidnightCyberBackground = ({
               stdDeviation="20"
               result="blur"
             />
-            {/* Sayıları biraz daha yumuşattık (30 ve -10) */}
             <feColorMatrix
               in="blur"
               mode="matrix"
               values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 30 -10"
               result="liquid"
             />
-            {/* Tırtıklanmayı önlemek için orijinal grafikle daha yumuşak birleştiriyoruz */}
             <feBlend in="SourceGraphic" in2="liquid" mode="normal" />
           </filter>
         </defs>
@@ -102,9 +99,7 @@ export const MidnightCyberBackground = ({
 
       {/* Layer 1: Liquid Blobs Container (Prismatic Atmosphere) */}
       <div className="absolute inset-0 pointer-events-none filter-[blur(60px)] md:filter-[url(#liquid-essence)] opacity-40 dark:opacity-80 transition-opacity duration-1000">
-        {" "}
         {/* Floating Blob 1 - Indigo */}
-        {/*ulanbes */}
         <motion.div
           animate={{
             x: [0, 150, -80, 0],
@@ -112,10 +107,10 @@ export const MidnightCyberBackground = ({
             scale: [1, 1.3, 0.8, 1],
           }}
           transition={{ duration: 35, repeat: Infinity, ease: "linear" }}
-          style={{ background: "var(--nebula-2)" }}
+          style={{ background: "var(--nebula-2)", willChange: "transform" }}
           className="absolute top-1/4 left-1/4 w-[300px] h-[300px] md:w-[600px] md:h-[600px] rounded-full opacity-40 dark:opacity-40"
         />
-        {/* Floating Blob 2 - Rose (New) */}
+        {/* Floating Blob 2 - Rose */}
         <motion.div
           animate={{
             x: [0, 200, -100, 0],
@@ -123,10 +118,10 @@ export const MidnightCyberBackground = ({
             scale: [0.8, 1.1, 0.9, 0.8],
           }}
           transition={{ duration: 28, repeat: Infinity, ease: "linear" }}
-          style={{ background: "var(--nebula-vibrant-1)" }}
+          style={{ background: "var(--nebula-vibrant-1)", willChange: "transform" }}
           className="absolute top-1/3 right-1/4 w-[250px] h-[250px] md:w-[500px] md:h-[500px] rounded-full opacity-30 dark:opacity-30"
         />
-        {/* Floating Blob 3 - Emerald (New) */}
+        {/* Floating Blob 3 - Emerald */}
         <motion.div
           animate={{
             x: [0, -150, 200, 0],
@@ -134,7 +129,7 @@ export const MidnightCyberBackground = ({
             scale: [1, 0.9, 1.2, 1],
           }}
           transition={{ duration: 32, repeat: Infinity, ease: "linear" }}
-          style={{ background: "var(--nebula-vibrant-2)" }}
+          style={{ background: "var(--nebula-vibrant-2)", willChange: "transform" }}
           className="absolute bottom-1/4 left-1/3 w-[220px] h-[220px] md:w-[450px] md:h-[450px] rounded-full opacity-35 dark:opacity-25"
         />
         {/* Floating Blob 4 - Deep Violet */}
@@ -145,7 +140,7 @@ export const MidnightCyberBackground = ({
             scale: [1, 0.9, 1.2, 1],
           }}
           transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
-          style={{ background: "var(--nebula-4)" }}
+          style={{ background: "var(--nebula-4)", willChange: "transform" }}
           className="absolute bottom-1/4 right-1/4 w-[280px] h-[280px] md:w-[550px] md:h-[550px] rounded-full opacity-30 dark:opacity-20 translate-z-0"
         />
         {/* Floating Blob 5 - Slate Accents */}
@@ -155,7 +150,7 @@ export const MidnightCyberBackground = ({
             y: [0, 200, -80, 0],
           }}
           transition={{ duration: 32, repeat: Infinity, ease: "linear" }}
-          style={{ background: "var(--nebula-1)" }}
+          style={{ background: "var(--nebula-1)", willChange: "transform" }}
           className="absolute top-1/3 left-1/2 w-[250px] h-[250px] md:w-[500px] md:h-[500px] rounded-full opacity-25 dark:opacity-10"
         />
       </div>
@@ -174,6 +169,7 @@ export const MidnightCyberBackground = ({
                 left: ripple.x,
                 top: ripple.y,
                 transform: "translate(-50%, -50%)",
+                willChange: "transform, opacity",
               }}
               className="absolute w-20 h-20 border border-zinc-500/30 dark:border-white/20 rounded-full blur-[2px]"
             />
@@ -192,7 +188,7 @@ export const MidnightCyberBackground = ({
 
       {/* Layer 4: High-End Film Grain */}
       <div
-        className="absolute inset-0 pointer-events-none opacity-[0.03] dark:opacity-[0.05] mix-blend-multiply dark:mix-blend-screen transition-opacity duration-1000 z-40 hidden md:block"
+        className="absolute inset-0 pointer-events-none opacity-[0.02] dark:opacity-[0.03] transition-opacity duration-1000 z-40 hidden md:block"
         style={{
           backgroundImage:
             "url('https://grainy-gradients.vercel.app/noise.svg')",

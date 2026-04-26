@@ -14,7 +14,7 @@ export function Providers({ children, locale, messages }: ProvidersProps) {
     <ThemeProvider
       attribute="class"
       defaultTheme="dark"
-      enableSystem
+      enableSystem={false}
       disableTransitionOnChange
     >
       <NextIntlClientProvider locale={locale} messages={messages}>
