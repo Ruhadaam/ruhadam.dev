@@ -72,7 +72,7 @@ export default function Home() {
       </div>
 
       {/* About Sections */}
-      <div className="w-full max-w-3xl">
+      <div className="relative w-full max-w-3xl">
         <AboutSection />
       </div>
 

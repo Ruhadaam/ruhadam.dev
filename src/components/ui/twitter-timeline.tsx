@@ -68,7 +68,7 @@ export const TwitterTimeline = ({ username }: TwitterTimelineProps) => {
   return (
     <div 
       ref={containerRef} 
-      className="w-full min-h-[400px] overflow-hidden rounded-2xl bg-white/5 dark:bg-black/10 backdrop-blur-md border border-white/10"
+      className="relative w-full min-h-[400px] overflow-hidden rounded-2xl bg-white/5 dark:bg-black/10 backdrop-blur-md border border-white/10"
     >
       {/* İskelet veya yedek yazı */}
       <div className="p-8 text-center text-zinc-500 text-xs">

@@ -3,7 +3,13 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { Github, Twitter, Linkedin, Instagram, MessageSquare } from "lucide-react";
+import {
+  Github,
+  Twitter,
+  Linkedin,
+  Instagram,
+  MessageSquare,
+} from "lucide-react";
 import { Heading } from "@/src/components/ui/heading";
 import { Text } from "@/src/components/ui/text";
 import { Link } from "@/src/i18n/routing";
@@ -25,7 +31,7 @@ export const ProfileSection = () => {
           transition={{ duration: 1, ease: [0.23, 1, 0.32, 1] }}
           className="group relative w-full max-w-[200px] md:max-w-[280px] aspect-square rounded-[3rem] overflow-hidden shadow-xl dark:shadow-2xl ring-1 ring-black/5 dark:ring-white/10 transition-all duration-700 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-1"
         >
-          <Link href="/">
+          <Link href="/" className="relative block w-full h-full">
             <Image
               src="/images/avatar.jpeg"
               alt="Professional Avatar"

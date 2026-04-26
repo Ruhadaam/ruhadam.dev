@@ -37,7 +37,7 @@ export const InstagramGrid = () => {
       {/* Instagram Profile Header */}
       <div className="flex flex-col md:flex-row gap-8 items-center md:items-start px-2">
         <div className="relative w-32 h-32 rounded-full p-1 bg-linear-to-tr from-yellow-400 via-pink-500 to-purple-600">
-          <div className="w-full h-full rounded-full border-4 border-white dark:border-zinc-950 overflow-hidden relative bg-white dark:bg-zinc-800">
+          <div className="relative w-full h-full rounded-full border-4 border-white dark:border-zinc-950 overflow-hidden bg-white dark:bg-zinc-800">
             <Image
               src="/images/avatar.jpeg"
               alt={instagramData.title}
