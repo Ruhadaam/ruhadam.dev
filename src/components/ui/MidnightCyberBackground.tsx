@@ -104,6 +104,7 @@ export const MidnightCyberBackground = ({
       <div className="absolute inset-0 pointer-events-none filter-[blur(60px)] md:filter-[url(#liquid-essence)] opacity-40 dark:opacity-80 transition-opacity duration-1000">
         {" "}
         {/* Floating Blob 1 - Indigo */}
+        {/*ulanbes */}
         <motion.div
           animate={{
             x: [0, 150, -80, 0],
@@ -114,7 +115,6 @@ export const MidnightCyberBackground = ({
           style={{ background: "var(--nebula-2)" }}
           className="absolute top-1/4 left-1/4 w-[300px] h-[300px] md:w-[600px] md:h-[600px] rounded-full opacity-40 dark:opacity-40"
         />
-
         {/* Floating Blob 2 - Rose (New) */}
         <motion.div
           animate={{
@@ -126,7 +126,6 @@ export const MidnightCyberBackground = ({
           style={{ background: "var(--nebula-vibrant-1)" }}
           className="absolute top-1/3 right-1/4 w-[250px] h-[250px] md:w-[500px] md:h-[500px] rounded-full opacity-30 dark:opacity-30"
         />
-
         {/* Floating Blob 3 - Emerald (New) */}
         <motion.div
           animate={{
@@ -138,7 +137,6 @@ export const MidnightCyberBackground = ({
           style={{ background: "var(--nebula-vibrant-2)" }}
           className="absolute bottom-1/4 left-1/3 w-[220px] h-[220px] md:w-[450px] md:h-[450px] rounded-full opacity-35 dark:opacity-25"
         />
-
         {/* Floating Blob 4 - Deep Violet */}
         <motion.div
           animate={{
@@ -150,7 +148,6 @@ export const MidnightCyberBackground = ({
           style={{ background: "var(--nebula-4)" }}
           className="absolute bottom-1/4 right-1/4 w-[280px] h-[280px] md:w-[550px] md:h-[550px] rounded-full opacity-30 dark:opacity-20 translate-z-0"
         />
-
         {/* Floating Blob 5 - Slate Accents */}
         <motion.div
           animate={{
