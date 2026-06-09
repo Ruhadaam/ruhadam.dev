@@ -6,6 +6,7 @@ import { ThemeSwitcher } from "@/src/components/ui/theme-switcher";
 import { LocaleSwitcher } from "@/src/components/ui/locale-switcher";
 import { MidnightCyberBackground } from "@/src/components/ui/MidnightCyberBackground";
 import { Text } from "@/src/components/ui/text";
+import { Countdown } from "@/src/components/ui/countdown";
 import { usePathname } from "@/src/i18n/routing";
 import { useTranslations } from "next-intl";
 
@@ -79,8 +80,9 @@ export default function MainLayout({
         <div className="pointer-events-auto w-full md:w-auto flex flex-row items-center justify-between md:contents order-2">
           {/* Left: Copyright */}
           <div className="md:w-[250px] flex justify-start md:order-1">
-            <Text className="text-[0.55rem] md:text-[0.65rem] font-medium text-zinc-400 dark:text-zinc-500 tracking-wider uppercase">
-              © 2026 <span className="hidden sm:inline">ruhadam.dev</span>
+            <Text className="text-[0.55rem] md:text-[0.65rem] font-medium text-zinc-400 dark:text-zinc-500 tracking-wider uppercase flex items-center">
+              © 2026 <span className="hidden sm:inline ml-1">ruhadam.dev</span>
+              <Countdown />
             </Text>
           </div>
 
