@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-// Target date: June 20, 2026 11:00:00 (UTC+3)
-const TARGET_DATE = new Date("2026-06-20T11:00:00+03:00").getTime();
+// Target date: September 25, 2026 11:00:00 (UTC+3)
+const TARGET_DATE = new Date("2026-09-25T11:00:00+03:00").getTime();
 
 const AnimatedNumber = ({ value }: { value: number | string }) => {
   return (
